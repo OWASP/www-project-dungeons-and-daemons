@@ -1,4 +1,3 @@
 ### Leaders
-* [Leader Name](mailto:leader.email@owasp.org)
-* [Leader Name](mailto:leader.email@owasp.org)
-* [Leader Name](mailto:leader.email@owasp.org)
+* [Johan Sydseter](mailto:johan.sydseter@owasp.org)
+* [Steven Wierckx](mailto:johan.sydseter@owasp.org)
