@@ -1,0 +1,39 @@
+---
+    name: Build and Test
+    on:
+        # Triggers the workflow on push or pull request events but only for the main branch
+        pull_request:
+          branches:
+            - main
+    permissions:
+      contents: read
+    jobs:
+      hardening:
+        name: Hardening
+        runs-on: ubuntu-latest
+        steps:
+          # Make sure we have some code to test
+          - name: Harden runner
+            uses: step-security/harden-runner@5c7944e73c4c2a096b17a9cb74d65b6c2bbafbde # v2.9.1
+            with:
+              egress-policy: block
+              allowed-endpoints: >
+                api.github.com:443
+                github-cloud.githubusercontent.com:443
+                github.com:443
+                motd.ubuntu.com:443
+                keys.openpgp.org:443
+                linux72.unoeuro.com:22
+      build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+          - name: Setup node
+            uses: actions/setup-node@26961cf329f22f6837d5f54c3efd76b480300ace # v4.0.3
+            with:
+              node-version: '20.13.1'
+          - name: Build
+            run: |
+              npm install          # Install dependencies
+              npm run build        # Build production version
