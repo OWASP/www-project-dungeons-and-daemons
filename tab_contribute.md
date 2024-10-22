@@ -20,18 +20,18 @@ tags: cc
 
 Some of the games that got created where storytelling/storybook games. These games were created using yaml and you may simply change the yaml under [characters](https://github.com/OWASP/www-project-dungeons-and-daemons/tree/main/characters), [games](https://github.com/OWASP/www-project-dungeons-and-daemons/tree/main/games), [rules](https://github.com/OWASP/www-project-dungeons-and-daemons/tree/main/rules), [static/images](https://github.com/OWASP/www-project-dungeons-and-daemons/tree/main/images). Keep in mind that when adding content please add it into the game's respective folder under the main folders above. This way, your game will be made available correctly online.
 
-<img src="images/help.svg" width="100rem" />
+<img src="assets/images/help.svg" width="100rem" />
 
 "Help wanted!" Means that any contribution is more then welcome. The game is dependent on your contributions to get ready and playable by the comunity.
 
-<img src="images/wip.svg" width="100rem" />
+<img src="assets/images/wip.svg" width="100rem" />
 
 "W.I.P", means that this is work in progress, contributions are welcome, but the original creator might want you to make contributions according to the ideas of the game creator. It may be a good idea to ask a question in the github forum, create a github issue or discuss the finer point on slack with the game creator befor making any larger contributions.
 
-<img src="images/rip.svg" width="100rem" />
+<img src="assets/images/rip.svg" width="100rem" />
 
 "R.I.P", means the game is dead. We won't be maintaining it and it might get removed. You can just restart the development of the game, but you will have to get it up to a level where you can play it before we change the status back to "W.I.P" or "READY".
 
-<img src="images/ready.svg" width="100rem" />
+<img src="assets/images/ready.svg" width="100rem" />
 
 "Ready", means the game can be played and are in maintanence mode, bugfixes, changes and translations are still needed, but there won't be any large changes to the story or game rules. If you want to change the game, you should discuss it with the game creator before proposing your changes.
