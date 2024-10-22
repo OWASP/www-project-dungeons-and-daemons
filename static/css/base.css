@@ -1,0 +1,39 @@
+:root
+{
+    --accent: #61b6e6;
+    --background: #1c1c1c;
+    --white : #ededed;
+    --green: rgb(0, 209, 0);
+    --font-title : "modern-dos";
+    --font-body : 'Courier New', Courier, monospace;
+}
+
+
+body
+{	
+    font-family: var(--font-title);  
+    color:var(--white);
+    margin:0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior:smooth;
+}
+
+a
+{
+    color:var(--white);
+    text-decoration: underline;	
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4
+{
+    font-weight: 400;
+}
