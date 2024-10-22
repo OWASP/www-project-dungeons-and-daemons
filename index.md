@@ -2,10 +2,10 @@
 
 layout: col-sidebar
 title: OWASP Dungeons and Daemons
-tags: example-tag
+tags: home
 level: 2
 type: code
-pitch: A very brief, one-line description of your project
+pitch: OWASP® Dungeons & Daemons is a collection of open source games for promoting awareness and knowledge about application security and security practices.
 
 ---
 
