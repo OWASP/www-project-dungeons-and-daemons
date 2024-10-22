@@ -2,10 +2,11 @@
 
 layout: col-sidebar
 title: OWASP Dungeons and Daemons
-tags: home
+tags: cc
 level: 2
-type: code
+type: documentation
 pitch: OWASP® Dungeons & Daemons is a collection of open source games for promoting awareness and knowledge about application security and security practices.
+project: true
 
 ---
 

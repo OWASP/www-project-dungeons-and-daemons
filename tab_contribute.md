@@ -3,7 +3,7 @@ title: Contribute
 layout:  null
 tab: true
 order: 1
-tags: contribute
+tags: cc
 ---
 
 ## Contribute with content:
