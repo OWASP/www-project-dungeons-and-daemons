@@ -21,7 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-static": "^3.0.6",
+		"@sveltejs/adapter-static": "^3.0.8",
 		"front-matter": "^4.0.2",
 		"svelte-markdown": "^0.4.1",
 		"vite-plugin-restart": "^0.4.2",
