@@ -1,0 +1,25 @@
+audience:
+  - breaker
+  - builder
+leaders:
+  - name: Johan Sydseter
+    email: johan.sydseter@owasp.org
+    github: sydseter
+  - name: Steven Wierckx
+    email: steven.wierckx@owasp.org
+    github: swierckx
+level: 2
+license:
+  - CC-BY-SA-4.0
+name: OWASP Dungeons and Daemons
+pitch: OWASP® Dungeons & Daemons is a collection of open source games for promoting awareness and knowledge about application security and security practices.
+repositories:
+  - name: www-project-dungeons-and-daemons
+    url: https://github.com/OWASP/www-project-dungeons-and-daemons
+    description: This repository contains OWASP Dungeons & Daemons a collection of security games. It's purpose is to promote security awareness and practices.
+tags:
+  - cc
+  - custom-tag-1
+  - custom-tag-2
+type: documentation
+website: https://owasp.org/www-project-dungeons-and-daemons
