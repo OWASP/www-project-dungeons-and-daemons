@@ -16,7 +16,7 @@
 		"@types/node": "^24.7.0",
 		"svelte": "^4.2.20",
 		"svelte-check": "^4.3.2",
-		"typescript": "^5.9.2",
+		"typescript": "^5.9.3",
 		"vite": "^5.4.14"
 	},
 	"type": "module",
