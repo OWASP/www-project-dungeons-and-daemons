@@ -19,7 +19,5 @@ repositories:
     description: This repository contains OWASP Dungeons & Daemons a collection of security games. It's purpose is to promote security awareness and practices.
 tags:
   - cc
-  - custom-tag-1
-  - custom-tag-2
 type: documentation
 website: https://owasp.org/www-project-dungeons-and-daemons
