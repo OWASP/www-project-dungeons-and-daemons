@@ -1,6 +1,6 @@
 # DEF CON: is canceled! (Black betrayal)"
 
-<img src="IMG_0242.png" alt="DEF CON: is canceled!" width="100%">
+![DEF CON is canceled! Dark Betrayal.[large]](/static/images/games/defonc-is-canceled-dark-betrayal.png)
 
 ## Pitch
 
