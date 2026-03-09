@@ -1,4 +1,4 @@
-# DEF CON is canceled (Dark Betrayal)
+# DEF CON: is canceled! (Black betrayal)"
 
 ## Pitch
 
