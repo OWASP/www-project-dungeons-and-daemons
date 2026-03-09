@@ -139,7 +139,7 @@ Each pillar cards have a positive and a negative outcome and one or more active 
 Positive outcome: The pillar is executed without any incident. 
 Negative outcome: The pillar gets sabotaged.
 
-First, the player needs to guess what the correct threat amongst the threat cards they have been given, if they guess the right threat, the positive outcome scenario is read.
+First, the player needs to agree on the correct threat amongst the threat cards they have been given, if they guess the right threat, the positive outcome scenario is read.
 
 ### The Option Cards
 
