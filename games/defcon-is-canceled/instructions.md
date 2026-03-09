@@ -1,6 +1,6 @@
 # Instructions
 
-This guide gives you everything you need to run "DEF CON: has been canceled! (Black betrayal)" from start to finish. All narration, opening dialog, and event descriptions are written out for you. Read them aloud or paraphrase — whatever feels comfortable. You do not need to improvise. The story is all here.
+This guide gives you everything you need to run "DEF CON: is canceled! (Black betrayal)" from start to finish. All narration, opening dialog, and event descriptions are written out for you. Read them aloud or paraphrase — whatever feels comfortable. You do not need to improvise. The story is all here.
 
 ---
 
@@ -43,7 +43,7 @@ E.g: The Badge Firmware: If the team includes a saboteur, the badges might start
 The NOC (Network Operations Center): A saboteur might "accidentally" drop the firewall, allowing a 14-year-old to Rickroll the entire main stage (Mission Fail).
 
 The loyalist have to deploy a team and identify, from the background of the story, "what can go wrong" by correctly identifing the hidden threat scenario in progress by studying the possible threat cards and then decide: "what are we going to do about it?"
-After making a decision, the players vote on whether the pillar goes on without an incident or whether it gets sabotaged by choosing amongst the two option cards "No incident" or "Sabotaged" provided by the GM. If the sabatour is among them, the pillar gets sabotaged. If so, the players can still save the day by rolling a d20 die. If 3 of the pillars fails, Defcon gets canceled and the short-seller wins. A minus point is counted as a negative modifier for each pillar that fails as moral takes a hit. If they succeed, the modifiers are removed. In the event the pillar goes on without an incident, roll a d20 die. A 5+ (plus minus any modifiers the players might have) means the pillar succeed.
+After making a decision, the players vote on whether the pillar goes on without an incident or whether it gets sabotaged by choosing amongst the two option cards "No incident" or "Sabotaged" provided by the GM. If the sabatour is among them, the pillar gets sabotaged. If so, the players can still save the day by rolling a d20 die. If 3 of the pillars fails, DEF CON gets canceled and the short-seller wins. A minus point is counted as a negative modifier for each pillar that fails as moral takes a hit. If they succeed, the modifiers are removed. In the event the pillar goes on without an incident, roll a d20 die. A 5+ (plus minus any modifiers the players might have) means the pillar succeed.
 
 ### Step 1: Before You Begin — The Setup Phase
 
@@ -96,7 +96,7 @@ Your goal is to win without ever being seen.
 >
 > Someone in this room needs this conference to fail.
 >
-> Your job is to run it anyway. You need to keep at least three of the five Core Pillars standing: the Keynotes, the CTF, the Network, the Badge, and the Party. Let three critical failures happen, and the Short-Sellers collect. The feds show up. The venue pulls the plug. DEF CON 34 becomes DEF CON: The Last One.
+> Your job is to run it anyway. You need to keep at least three of the five Core Pillars standing: the Keynotes, the CTF, the Network, the Badge, and the Party. Let three critical failures happen, and the Short-Sellers collect. The feds show up. The venue pulls the plug and DEF CON 34 becomes DEF CON: The Last One.
 >
 > The only question is: who among you is already working to make that happen?"
 
@@ -158,7 +158,7 @@ After each player have played their choosen card face down, the GM shuffles the 
 
 - **Roll meets or exceeds the target:** Pillar success. The pillar remains standing. Any active negative modifiers are removed before the next pillar.
 - **Roll falls below the target (adjusted):** Pillar failure. The pillar takes a strike. Morale tanks. −1 modifier applied to the next pillar.
-- **Three pillars fails:** Defcon gets canceled. The Short-Sellers gets their payout. The game ends.
+- **Three pillars fails:** DEF CON gets canceled. The Short-Sellers gets their payout. The game ends.
 
 Record modifiers on a shared notepad everyone can see or play with the character cards face up and use a d6 die to keep track of morale.
 
@@ -192,10 +192,10 @@ The Short-Sellers win condition triggers immediately and overrides everything el
 
 **How the Short-Seller names the Dark Tangent:** 
 
-The Short-Seller may declare "Cancel Defcon". They name one player. The GM confirms whether the named player is the Dark Tangent. If correct, read the Short-Seller win narration. If wrong, the Short-Seller is exposed and will be put on the side-lines.
+The Short-Seller may declare "Cancel DEF CON". They name one player. The GM confirms whether the named player is the Dark Tangent. If correct, read the Short-Seller win narration. If wrong, the Short-Seller is exposed and will be put on the side-lines.
 
 **Read aloud:**
 
-> "Defcon gets canceled. The Closing Ceremonies don't happen. The venue contract is voided citing 'repeated safety and liability violations.' The feds are asking questions nobody wants to answer. The Polymarket payout clears sometime Thursday night.
+> "DEF CON gets canceled. The Closing Ceremonies don't happen. The venue contract is voided citing 'repeated safety and liability violations.' The feds are asking questions nobody wants to answer. The Polymarket payout clears sometime Thursday night.
 >
 > DEF CON 34 will be remembered — but not the way anyone intended."
