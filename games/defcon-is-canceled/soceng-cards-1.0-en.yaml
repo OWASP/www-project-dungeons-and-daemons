@@ -1,0 +1,521 @@
+﻿---
+meta:
+  edition: "soceng"
+  component: "cards"
+  language: "EN"
+  version: "1.0"
+suits:
+-
+  id: "LOC"
+  name: "Location Spoofing"
+  cards:
+  -
+    id: "LOC2"
+    value: "2"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Lucas can trigger a Mass Crowd Crush because he deployed a spoofed \"Hacker Tracker\" alert directing 20,000 people to a single, small workshop room that cannot physically support the load."
+  -
+    id: "LOC3"
+    value: "3"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sarah can cause a Venue-Wide Network Blackout because she used a spoofed \"Official LVCC Admin\" Wi-Fi portal to trick the NOC volunteers into entering their backbone credentials on her rogue server."
+  -
+    id: "LOC4"
+    value: "4"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Marcus can provoke a Fire Marshal Shutdown because he placed spoofed \"Emergency Exit\" signs that redirect attendees into a dead-end storage closet to test their \"situational awareness.\""
+  -
+    id: "LOC5"
+    value: "5"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Elena can disrupt the Official CTF Finals because she spoofed the internal \"BBB scoring server\" IP address, causing the teams to send their exploit traffic to her private sniffer instead of the competition engine."
+  -
+    id: "LOC6"
+    value: "6"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "David can cause a Financial Audit Failure because he used a spoofed QR code on the \"Cash-at-the-Door\" signage that directs attendees to a fake payment processor, stealing the conference's registration revenue."
+  -
+    id: "LOC7"
+    value: "7"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Chloe can provoke a Law Enforcement Intervention because she spoofed the location of a \"Dark Web Meetup\" on the official digital maps, leading attendees into a restricted LVCC utility zone monitored by federal sensors."
+  -
+    id: "LOC8"
+    value: "8"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Kevin can trigger a Medical Emergency Delay because he spoofed the \"First Aid Station\" location on the venue's interactive kiosks, directing injured attendees to a remote loading dock instead of the medical suite."
+  -
+    id: "LOC9"
+    value: "9"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sofia can cause a Speaker Safety Breach because she spoofed the \"Green Room\" location on the internal staff Slack, directing high-profile government keynotes into an unvetted public hallway."
+  -
+    id: "LOCX"
+    value: "10"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "James can provoke a Federal FCC Raid because he spoofed the GPS coordinates of the Aerospace Village’s \"Live Satellite Link,\" causing the tracking antennas to point toward a sensitive nearby military frequency."
+  -
+    id: "LOCJ"
+    value: "J"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Aisha can cause a Registration Gridlock because she spoofed the \"Badge Activation\" URL on the electronic badges' screens, leading thousands of people to a dead link that prevents them from entering the hall."
+  -
+    id: "LOCQ"
+    value: "Q"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Robert can trigger a Venue Evacuation because he spoofed a \"Hazardous Material Leak\" alert via the building’s Bluetooth beacon system, mimicking a legitimate LVCC safety broadcast."
+  -
+    id: "LOCK"
+    value: "K"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Maya can disrupt the Official Merchandise Flow because she spoofed the \"Merch Line Start\" location using floor decals, creating a massive human bottleneck that obstructs the West Hall’s main fire exit."
+  -
+    id: "LOCA"
+    value: "A"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Thomas can provoke a Total Venue Blacklist because he spoofed the hotel’s \"Digital Concierge\" resource to collect the room numbers and PII of the international venue managers, leading to a major privacy litigation."
+    misc: ""
+-
+  id: "OBS"
+  name: "Obstruction"
+  cards:
+  -
+    id: "OBS2"
+    value: "2"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Lucas can trigger a Fire Marshal Shutdown because he used a \"Goon\" pretext to physically obstruct the West Hall's primary fire-curtain deployment path with a large, unsanctioned \"Art-Car\" installation."
+  -
+    id: "OBS3"
+    value: "3"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sarah can cause a Venue-Wide Network Collapse because she used a signal jammer to obstruct the official BBB CTF wireless frequencies, forcing organizers to halt the competition to investigate a suspected federal communication breach."
+  -
+    id: "OBS4"
+    value: "4"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Marcus can provoke a Mass Stampede Incident because he used \"Artificial Urgency\" to obstruct the main staircase with a fake \"Security Lockdown\" sign, funneling 10,000 attendees into a dangerously narrow service corridor."
+  -
+    id: "OBS5"
+    value: "5"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Elena can disrupt the Aerospace Village Live Demo because she used a GPS-spoofing device to obstruct the satellite link of a landing-system simulation, potentially causing the FAA to revoke the conference's \"Experimental Radio\" permit."
+  -
+    id: "OBS6"
+    value: "6"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "David can cause a Registration Gridlock because he physically obstructed the Cash-at-the-Door QR-scanners with a \"mystery\" hardware device, creating a crowd-crush scenario that forced LVCC security to stop all entry."
+  -
+    id: "OBS7"
+    value: "7"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Chloe can trigger a Medical Emergency Delay because she obstructed the designated \"EMS Lane\" in the West Hall parking lot with a \"Pop-up Party,\" preventing paramedics from reaching a distressed attendee in the Biohacking Village."
+  -
+    id: "OBS8"
+    value: "8"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Kevin can provoke a Venue Power Blackout because he obstructed the airflow to the West Hall’s primary electrical transformers with \"Sound-Dampening\" foam for a private party, causing a thermal shutdown."
+  -
+    id: "OBS9"
+    value: "9"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sofia can cause a Speaker Safety Breach because she used a \"Staff Only\" sign to obstruct the legitimate Green Room entrance, redirecting high-profile government speakers into a side room for an unauthorized \"interview.\""
+  -
+    id: "OBSX"
+    value: "10"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "James can trigger a Digital Signage Failure because he used a \"Firmware Update\" USB stick to obstruct the LVCC’s wayfinding kiosks, leaving 30,000 attendees unable to locate emergency exits or talk rooms."
+  -
+    id: "OBSJ"
+    value: "J"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Aisha can provoke a Law Enforcement Raid because she used a \"Physical Security Audit\" pretext to obstruct the latch on a restricted LVCC utility door, allowing unvetted non-attendees to enter the building’s secure perimeter."
+  -
+    id: "OBSQ"
+    value: "Q"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Robert can cause a Social Engineering Contest Scandal because he used a \"Bluetooth Spam\" attack to obstruct the smartphones of the SECTF judges, preventing them from monitoring a live (and potentially dangerous) social engineering call."
+  -
+    id: "OBSK"
+    value: "K"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Maya can disrupt the Official Merchandise Flow because she used a \"Payment Error\" pretext to obstruct the official mPOS tablets, forcing thousands of attendees into a stagnant, unmanaged queue that blocked the main hall artery."
+  -
+    id: "OBSA"
+    value: "A"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Thomas can provoke a Total Venue Blacklist because he used \"Lock Picking\" to obstruct the hotel’s master keycard system, preventing hundreds of attendees from accessing their rooms and creating a public safety crisis in the lobby."
+    misc: ""
+-
+  id: "MAN"
+  name: "Manipulation & Elicitation"
+  cards:
+  -
+    id: "MAN2"
+    value: "2"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Lucas can trigger a Venue-Wide Evacuation because he used Artificial Urgency to convince a group of attendees that there was a \"gas leak\" in the West Hall, causing a dangerous crowd crush at the exit doors."
+  -
+    id: "MAN3"
+    value: "3"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sarah can cause a Federal Law Enforcement Intervention because she used The \"Recruiter\" Ruse to elicit classified aerospace protocols from a government speaker under the guise of a high-level job interview for a defense contractor."
+  -
+    id: "MAN4"
+    value: "4"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Marcus can provoke a Public Health Shutdown because he used Sympathy Exploitation to bypass \"Biohacking Village\" safety barriers, claiming he needed \"urgent medical data\" for a sick relative, which led to a hazardous material exposure."
+  -
+    id: "MAN5"
+    value: "5"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Elena can disrupt the Official CTF Finals because she used Fake Peer Validation to trick a \"Benevolent Bureau of Birds\" (BBB) organizer into revealing the competition's internal network topography during a \"casual\" bar conversation."
+  -
+    id: "MAN6"
+    value: "6"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "David can cause a Financial Audit Failure because he used The \"Goon\" Authority Play to manipulate \"Cash-at-the-Door\" volunteers into handing over registration tablets for a \"mandatory security sync\" that actually harvested payment data."
+  -
+    id: "MAN7"
+    value: "7"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Chloe can provoke a Diplomatic Incident because she used Fanboy Flattery to lower the guard of an international dignitary, eliciting sensitive geopolitical \"war stories\" that were being recorded for a hostile intelligence entity."
+  -
+    id: "MAN8"
+    value: "8"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Kevin can trigger a Corporate Lawsuit because he used Arrogance Provocation to trick a vendor’s lead engineer into \"proving\" their encryption wasn't weak by revealing proprietary source code details in a public hallway."
+  -
+    id: "MAN9"
+    value: "9"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sofia can cause a Venue Safety Breach because she used The \"Damsel/Distress\" Gambit to manipulate an LVCC technician into letting her \"borrow\" a restricted service elevator, giving her physical access to the building’s HVAC controls."
+  -
+    id: "MANX"
+    value: "10"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "James can provoke a Terror-Protocol Response because he used Social Proof Manipulation to lead a large group into a restricted \"back-of-house\" area, making LVCC security believe a coordinated breach of the venue perimeter was occurring."
+  -
+    id: "MANJ"
+    value: "J"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Aisha can cause a Speaker Safety Crisis because she used Elicitation during a \"Wait-Time\" interview in the Green Room hallway to extract the private hotel room numbers and flight itineraries of high-profile keynotes."
+  -
+    id: "MANQ"
+    value: "Q"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Robert can trigger a Registration Gridlock because he used Quid Pro Quo to convince dozens of attendees to \"boycott\" the official scanners in exchange for \"limited edition\" stickers, causing a massive, unmanageable crowd at the entrance."
+  -
+    id: "MANK"
+    value: "K"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Maya can cause a Social Engineering Contest Scandal because she \"socially engineered\" the official SECTF judges into granting her \"points\" for a real-world attack on the LVCC's internal security staff, violating the conference's \"No-Target\" policy."
+  -
+    id: "MANA"
+    value: "A"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Thomas can provoke a Total Venue Blacklist because he used Alcohol-Induced Elicitation at an official party to trick the LVCC Venue Manager into revealing the master override codes for the West Hall’s digital signage and lighting."
+    misc: ""
+-
+  id: "BAI"
+  name: "Baiting"
+  cards:
+  -
+    id: "BAI2"
+    value: "2"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Lucas can trigger a National Security Investigation because he left \"branded\" Aerospace Village USB drives near the LVCC South Hall (shared with government contractors) containing a beacon that phones home from restricted networks."
+  -
+    id: "BAI3"
+    value: "3"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sarah can cause a Venue-Wide Network Collapse because she dropped \"High-Speed Admin\" Ethernet adapters in the NOC hallway that, when plugged in by a stressed volunteer, execute a Layer-2 loopback attack."
+  -
+    id: "BAI4"
+    value: "4"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Marcus can provoke an FBI Counter-Terrorism Response because he \"baited\" a high-traffic walkway with a realistic-looking \"SDR Suitcase\" featuring an exposed countdown timer, designed as a social engineering \"test\" that looks like an IED."
+  -
+    id: "BAI5"
+    value: "5"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Elena can disrupt the Official CTF Finals because she left \"cloned\" BBB organizer badges in the chill-out lounge that, when scanned by curious players, install a persistent credential-sniffing payload on their mobile devices."
+  -
+    id: "BAI6"
+    value: "6"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "David can cause a Mass Medical Emergency because he left \"Biohacking Kit\" samples in the village area that encouraged attendees to \"self-test\" an unverified chemical compound, leading to a hazardous material (HAZMAT) alert."
+  -
+    id: "BAI7"
+    value: "7"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Chloe can provoke a Law Enforcement Raid because she baited the \"Vendor Area\" with QR-coded flyers for a \"Dark Web Physical Marketplace\" that actually led users to an active federal sting operation portal."
+  -
+    id: "BAI8"
+    value: "8"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Kevin can trigger a Fire Marshal Shutdown because he baited the West Hall's main power pillars with \"Free Universal Power Strips\" that were intentionally wired to cause a localized electrical fire when fully loaded."
+  -
+    id: "BAI9"
+    value: "9"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sofia can cause a Registration Blackout because she left \"Pre-Activated\" cash-at-the-door badges on a table, which were actually hardware-modified to \"brick\" the official RFID readers upon first contact."
+  -
+    id: "BAIX"
+    value: "10"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "James can provoke a Civil Lawsuit because he left \"Leaked Vendor Prototype\" laptops in a hotel lobby, which were rigged to record video and audio of anyone who opened them, violating Nevada's privacy laws."
+  -
+    id: "BAIJ"
+    value: "J"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Aisha can cause a Diplomatic Incident because she left \"Translator Pro\" earbuds in the Speaker Lounge that were actually high-gain microphones designed to record and stream private conversations of international dignitaries."
+  -
+    id: "BAIQ"
+    value: "Q"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Robert can trigger a Venue Evacuation because he baited the LVCC's HVAC intake with a \"Mystery Vapor\" device (labeled as an \"IoT Scent Project\") that triggered the building's automated chemical and smoke sensors."
+  -
+    id: "BAIK"
+    value: "K"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Maya can compromise Speaker Safety because she left \"VIP Gift Bags\" in the Green Room containing \"Smart Watches\" that were actually GPS trackers intended to follow high-profile government officials back to their secure locations."
+  -
+    id: "BAIA"
+    value: "A"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Thomas can cause a Total Venue Blacklist by baiting the LVCC's internal \"Wayfinding\" kiosks with \"Free Firmware Update\" USB sticks, which permanently disabled the venue's digital signage system."
+    misc: ""
+-
+  id: "DIG"
+  name: "Digital & Wireless"
+  cards:
+  -
+    id: "DIG2"
+    value: "2"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Lucas can trigger a Network Blackout because he deployed high-powered Wi-Fi deauthentication frames to obstruct the official \"Hacker Tracker\" app, causing mass confusion and crowd-flow collapse."
+  -
+    id: "DIG3"
+    value: "3"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sarah can cause a Venue-Wide Safety Shutdown because she used a \"Benevolent Bureau of Birds\" (BBB) pretext to wirelessly spoof the LVCC West Hall’s IoT fire-suppression sensors during the CTF finals."
+  -
+    id: "DIG4"
+    value: "4"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Marcus can provoke a Federal Communications Commission (FCC) Raid because he operated an illegal high-gain GPS jammer within the Aerospace Village, obstructing critical aviation signals from the nearby Harry Reid International Airport."
+  -
+    id: "DIG5"
+    value: "5"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Elena can disrupt the Keynote Livestream because she performed a \"BGP Hijacking\" attack on the LVCC’s dedicated fiber uplink, redirecting the official global broadcast to a malicious server."
+  -
+    id: "DIG6"
+    value: "6"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "David can cause a Financial Audit Failure because he used a \"Mobile Point of Sale\" (mPOS) spoofing attack at the official Merch booth to obstruct legitimate credit card processing for thousands of attendees."
+  -
+    id: "DIG7"
+    value: "7"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Chloe can trigger a Mass Panic Incident because she pushed a forged \"Emergency Alert System\" (EAS) notification to every phone in the West Hall via a rogue 5G small-cell base station."
+  -
+    id: "DIG8"
+    value: "8"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Kevin can compromise the Speaker Reputation System because he used \"Deepfake\" audio injection via the venue’s unencrypted wireless microphone frequencies to disrupt a high-profile government presentation."
+  -
+    id: "DIG9"
+    value: "9"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sofia can cause a Registration Gridlock because she launched a massive Layer-2 \"MAC Flooding\" attack on the West Hall’s switching infrastructure, obstructing the \"Cash-at-the-door\" badge activation system."
+  -
+    id: "DIGX"
+    value: "10"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "James can provoke a Public Health Intervention because he wirelessly intercepted and manipulated telemetry data from insulin pumps and pacemakers within the Biohacking Village \"Live Lab.\""
+  -
+    id: "DIGJ"
+    value: "J"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Aisha can cause a Security Breach Investigation because she used a \"HID-over-Bluetooth\" attack to take remote control of the LVCC’s digital signage, displaying prohibited content that violates the venue's \"Good Standing\" contract."
+  -
+    id: "DIGQ"
+    value: "Q"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Robert can trigger a Venue Evacuation because he performed a \"BlueBorne\" exploit on the building’s automated physical access control system, obstructing the Goons from locking or unlocking critical safety zones."
+  -
+    id: "DIGK"
+    value: "K"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Maya can disrupt the Electronic Badge Ecosystem because she deployed a \"Sub-GHz\" replay attack that bricked the 2026 electronic badges, obstructing the interactive \"Quest\" that 30,000 attendees are participating in."
+  -
+    id: "DIGA"
+    value: "A"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Thomas can cause a Legal Cease-and-Desist because he set up a \"Transparent Proxy\" on the venue's guest Wi-Fi to capture and \"leak\" the private PII of international government speakers attending under diplomatic immunity."
+    misc: ""
+-
+  id: "PHY"
+  name: "Physical"
+  cards:
+  -
+    id: "PHY2"
+    value: "2"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Lucas can trigger a Fire Marshal Shutdown because he obstructed the massive West Hall emergency egress routes with an unsanctioned \"pop-up\" village, creating a localized stampede risk."
+  -
+    id: "PHY3"
+    value: "3"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sarah can cause a Venue-Wide Power Failure because she bypassed physical electrical sub-panels in the West Hall floor boxes to draw unmetered power for a high-wattage \"badge burning\" station."
+  -
+    id: "PHY4"
+    value: "4"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Marcus can provoke a Law Enforcement Intervention because he smuggled prohibited \"kinetic impact\" hardware into the Physical Security Village by exploiting the high-volume baggage \"drop-off\" zone."
+  -
+    id: "PHY5"
+    value: "5"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Elena can compromise LVCC Infrastructure Control because she used a \"Goon\" pretext to enter the West Hall’s restricted mechanical mezzanines, gaining physical access to the building’s HVAC and lighting PLCs."
+  -
+    id: "PHY6"
+    value: "6"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "David can cause a Mass Evacuation because he left an \"art installation\" (a suspicious-looking black box with blinking lights) in the high-traffic tunnel connecting the West Hall to the North Hall."
+  -
+    id: "PHY7"
+    value: "7"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Chloe can disrupt the Official CTF Finals because she used a physical shim to enter the \"Benevolent Bureau of Birds\" (BBB) restricted server room, intending to \"hardware hack\" the competition's scoring engine."
+  -
+    id: "PHY8"
+    value: "8"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Kevin can trigger a Medical Emergency Delay because he obstructed the designated \"Aisle 100\" Ambulance Access path with a dense crowd of attendees during a spontaneous \"swag toss\" event."
+  -
+    id: "PHY9"
+    value: "9"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sofia can cause a Venue Breach Incident because she used a \"cloned\" LVCC Staff Badge to bypass the West Hall’s freight elevator security, allowing unvetted non-attendees into the secure \"Speaker Ready\" room."
+  -
+    id: "PHYX"
+    value: "10"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "James can provoke a Corporate Lawsuit Shut-Down because he physically tampered with a vendor’s prototype hardware on the exhibit floor during \"closed\" hours, violating the venue's strict liability insurance."
+  -
+    id: "PHYJ"
+    value: "J"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Aisha can cause a Security Lockdown because she used a \"lock-picking\" demonstration as a cover to disable the electromagnetic locks on the West Hall’s exterior loading docks."
+  -
+    id: "PHYQ"
+    value: "Q"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Robert can trigger a Terror-Protocol Response because he deployed a drone inside the West Hall’s 40-foot ceilings, obstructing the venue’s internal security sensors and automated fire-suppression lasers."
+  -
+    id: "PHYK"
+    value: "K"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Maya can compromise Speaker Safety because she used a \"press\" pretext to bypass the green-room physical barriers, intending to perform an aggressive \"social engineering audit\" on a high-profile government keynote."
+  -
+    id: "PHYA"
+    value: "A"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Thomas can cause a Registration Collapse because he physically obstructed the QR-code scanners at the \"Cash-at-the-door\" line, creating a \"crowd crush\" scenario that forced the Goons to halt entry for two hours."
+    misc: ""
+-
+  id: "COR"
+  name: "Corncuopia"
+  cards:
+  -
+    id: "COR2"
+    value: "2"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Lucas can trigger a National Security Investigation because he left \"branded\" Aerospace Village USB drives near the LVCC South Hall (shared with government contractors) containing a beacon that phones home from restricted networks."
+  -
+    id: "COR3"
+    value: "3"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sarah can cause a Venue-Wide Network Collapse because she dropped \"High-Speed Admin\" Ethernet adapters in the NOC hallway that, when plugged in by a stressed volunteer, execute a Layer-2 loopback attack."
+  -
+    id: "COR4"
+    value: "4"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Marcus can provoke an FBI Counter-Terrorism Response because he \"baited\" a high-traffic walkway with a realistic-looking \"SDR Suitcase\" featuring an exposed countdown timer, designed as a social engineering \"test\" that looks like an IED."
+  -
+    id: "COR5"
+    value: "5"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Elena can disrupt the Official CTF Finals because she left \"cloned\" BBB organizer badges in the chill-out lounge that, when scanned by curious players, install a persistent credential-sniffing payload on their mobile devices."
+  -
+    id: "COR6"
+    value: "6"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "David can cause a Mass Medical Emergency because he left \"Biohacking Kit\" samples in the village area that encouraged attendees to \"self-test\" an unverified chemical compound, leading to a hazardous material (HAZMAT) alert."
+  -
+    id: "COR7"
+    value: "7"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Chloe can provoke a Law Enforcement Raid because she baited the \"Vendor Area\" with QR-coded flyers for a \"Dark Web Physical Marketplace\" that actually led users to an active federal sting operation portal."
+  -
+    id: "COR8"
+    value: "8"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Kevin can trigger a Fire Marshal Shutdown because he baited the West Hall's main power pillars with \"Free Universal Power Strips\" that were intentionally wired to cause a localized electrical fire when fully loaded."
+  -
+    id: "COR9"
+    value: "9"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Sofia can cause a Registration Blackout because she left \"Pre-Activated\" cash-at-the-door badges on a table, which were actually hardware-modified to \"brick\" the official RFID readers upon first contact."
+  -
+    id: "CORX"
+    value: "10"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "James can provoke a Civil Lawsuit because he left \"Leaked Vendor Prototype\" laptops in a hotel lobby, which were rigged to record video and audio of anyone who opened them, violating Nevada's privacy laws."
+  -
+    id: "CORJ"
+    value: "J"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Aisha can cause a Diplomatic Incident because she left \"Translator Pro\" earbuds in the Speaker Lounge that were actually high-gain microphones designed to record and stream private conversations of international dignitaries."
+  -
+    id: "CORQ"
+    value: "Q"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Robert can trigger a Venue Evacuation because he baited the LVCC's HVAC intake with a \"Mystery Vapor\" device (labeled as an \"IoT Scent Project\") that triggered the building's automated chemical and smoke sensors."
+  -
+    id: "CORK"
+    value: "K"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Maya can compromise Speaker Safety because she left \"VIP Gift Bags\" in the Green Room containing \"Smart Watches\" that were actually GPS trackers intended to follow high-profile government officials back to their secure locations."
+  -
+    id: "CORA"
+    value: "A"
+    url: "https://cornucopia.owasp.org/cards/"
+    desc: "Thomas can cause a Total Venue Blacklist by baiting the LVCC's internal \"Wayfinding\" kiosks with \"Free Firmware Update\" USB sticks, which permanently disabled the venue's digital signage system."
+    misc: ""
+-
+  id: "WC"
+  name: ""
+  cards:
+  -
+    id: "WCA"
+    value: "A"
+    url: "https://cornucopia.owasp.org/cards/"
+    card: "Joker"
+    desc: ""
+    misc: ""
+  -
+    id: "WCB"
+    value: "B"
+    url: "https://cornucopia.owasp.org/cards/"
+    card: "Joker"
+    desc: ""
+    misc: ""
+paragraphs:
+-
+  id: "Common"
+  name: "Common"
+  sentences: []
+  
