@@ -11,6 +11,7 @@ This guide gives you everything you need to run "DEF CON: is canceled! (Black be
 - The threat [card list](cards.md)
 - The pillar [card list](pillars.md)
 - One 20-sided die (d20)
+- One 6-sided die (d6)
 - 3–8 players (works best with 5–7) NB: Expansion packs for larger groups coming soon.
 
 ---
