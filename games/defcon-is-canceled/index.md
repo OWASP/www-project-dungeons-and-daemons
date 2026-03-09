@@ -4,7 +4,7 @@
 
 ## Pitch
 
-DEF CON: is canceled! (Dark Betrayal) It is a social deduction party game that teaches players about the risk of social engineering and the importance of threat modeling while having fun. It's a tabletop role-playing game which playes out in the setting of DEF CON 34, where players are either loyalists trying to save the conference or short-sellers trying to sabotage it from the inside. The game is played with a game master (GM) and is designed for in-person play with 3–8 players, including pre-written narration, character roles, and event scenarios. Players must navigate a series of missions (the "Core Pillars") and identify and mitigate hidden threats, while trying to avoid the saboteurs exposing the Dark Tangent.
+DEF CON: is canceled! (Dark Betrayal) Is a social deduction party game that teaches players about the risk of social engineering and the importance of threat modeling while having fun. It's a tabletop role-playing game which playes out in the setting of DEF CON 34, where players are either loyalists trying to save the conference or short-sellers trying to sabotage it from the inside. The game is played with a game master (GM) and is designed for in-person play with 3–8 players, including pre-written narration, character roles, and event scenarios. Players must navigate a series of missions (the "Core Pillars") and identify and mitigate hidden threats, while trying to avoid the saboteurs exposing the Dark Tangent.
 
 ## The Setting 
 
