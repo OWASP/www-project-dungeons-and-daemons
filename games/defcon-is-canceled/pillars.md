@@ -1,6 +1,6 @@
 # The Pillars
 
-These are examples of pillar cards. NB: Each pillar card should have at least 2 possible threats. The GM choose which one is relevant and write it down on a piece of paper.
+These are examples of pillar cards. NB: Each pillar card should have at least 2 possible threats. The GM chooses which one is relevant and writes it down on a piece of paper.
 
 ## Pillar 1 — The Keynotes
 
@@ -18,7 +18,7 @@ These are examples of pillar cards. NB: Each pillar card should have at least 2 
 - **DIG5** (Elena / BGP hijacking)
 - **MAN9** (Manipulation & Elicitation)
 
-### After deployment team has been decided
+### After the deployment team has been decided
 
 > "The team heads to the main stage area. The speaker wrangler is already on site. One of the keynote staff mentions something odd — a woman in a staff shirt was asking detailed questions about the service elevator near the Green Room. Nobody has seen her before. She's gone now."
 
@@ -38,7 +38,7 @@ These are examples of pillar cards. NB: Each pillar card should have at least 2 
 
 ### Pillar fails
 
-> "The keynotes are a mess. The first speaker is delayed by an hour. The second speaker cancels entirely, citing 'unresolved security concerns.' The third speaker goes on as scheduled but their talk is overshadowed by the drama. The press has a field day. Jeff looks like he might cry."
+> "The keynotes are a mess. The first speaker is delayed by an hour. The second speaker cancels entirely, citing 'unresolved security concerns.' The third speaker goes on as scheduled, but their talk is overshadowed by the drama. The press has a field day. Jeff looks like he might cry."
 
 ---
 
@@ -54,7 +54,7 @@ Players nominate a deployment team.
 
 - **BAI5** (Elena / cloned badges / credential sniffer).
 
-### After deployment team has been decided
+### After the deployment team has been decided
 
 > One of the BBB organizers pulls you aside before the doors open. 'Someone was in the hallway near the server room last night. The lock was fine, but the server room smelled like isopropyl alcohol. Someone was in there.'"
 > "The CTF floor is buzzing. Teams are set up. The scoreboard is live. For the first two hours, everything runs smoothly. Then the BBB organizer calls you on the radio — the scoring traffic is being routed somewhere. The leaderboard is frozen."
@@ -84,7 +84,7 @@ Players nominate a deployment team.
 
 ### Opening Narration
 
-> "DEF CON's network is the most attacked network in the world. Intentionally. That's the point. The NOC runs the show: routing, firewall rules, the Wall of Sheep, the Hacker Tracker. Thirty thousand devices online simultaneously.
+> "DEF CON's network is the most attacked network in the world. Intentionally. That's the point. The NOC runs the show: routing, firewall rules, the Wall of Sheep, and the Hacker Tracker. Thirty thousand devices are online simultaneously.
 >
 > But this year, one of the NOC volunteers mentions something that doesn't sit right. An Ethernet adapter was found plugged into an unmonitored switch port near the NOC hallway. It wasn't their equipment. It was plugged in and left."
 
@@ -92,7 +92,7 @@ Players nominate a deployment team.
 
 - **BAI3** (Sarah / Layer-2 loopback adapter).
 
-### After deployment team has been decided
+### After the deployment team has been decided
 
 > "The NOC team is on high alert. The suspect adapter has been pulled and bagged. But the question is whether anything got in before it was found. The traffic logs look normal — mostly. There's a brief burst about four hours ago that nobody can explain."
 
@@ -112,7 +112,7 @@ Players nominate a deployment team.
 
 ### Pillar fails
 
-> "At 2:47 PM, the firewall drops. All of it. For eleven seconds, the main hall network is completely collaped. The NOC scrambles to isolate the attack and restore critical services, but the damage is done. The Wall of Sheep is offline for the rest of the conference. The press has a field day."
+> "At 2:47 PM, the firewall drops. All of it. For eleven seconds, the main hall network is completely collapsed. The NOC scrambles to isolate the attack and restore critical services, but the damage is done. The Wall of Sheep is offline for the rest of the conference. The press has a field day."
 
 ---
 
@@ -129,7 +129,7 @@ Players nominate a deployment team.
 - **BAI9** (Sofia / bricked RFID readers)
 - **DIGK** (Maya / Sub-GHz replay attack).
 
-### After deployment team has been decided
+### After the deployment team has been decided
 
 > "The badges are going out. The first thousand attendees scan in fine. Then the registration team radios in — the RFID readers at three of the six entry lanes are throwing errors. They're not processing new badges. The queue is backing up."
 
@@ -145,7 +145,7 @@ Players nominate a deployment team.
 
 ### Pillar succeeds
 
-> "Morgan identifies the problem in time: a batch of hardware-modified badges is pulling a bricking payload when scanned. The affected readers are swapped out from spares. The line moves. The badge community solves the first puzzle layer before Friday afternoon."
+> "Morgan identifies the problem in time: a batch of hardware-modified badges is pulling a bricking payload when scanned. The affected readers are swapped out for spares. The line moves. The badge community solves the first puzzle layer before Friday afternoon."
 
 ### Pillar fails
 
@@ -159,13 +159,13 @@ Players nominate a deployment team.
 
 > "The last night of DEF CON 34. Caesar's Palace. The Caesar's Challenge party — the conference's informal closing celebration. It's invitation-only for speakers, organizers, and selected guests, but it's the heart of the community. Jeff gives a toast every year. It's the moment that makes all of this worth it.
 >
-> This year someone is trying to make sure it doesn't happen. The venue coordinator at Caesar's gets a call from someone claiming to be from DEF CON, asking to move the event to a 'more private space.' She almost did it. She's now asking for a callback confirmation from a known contact."
+> This year, someone is trying to make sure it doesn't happen. The venue coordinator at Caesar's gets a call from someone claiming to be from DEF CON, asking to move the event to a 'more private space.' She almost did it. She's now asking for a callback confirmation from a known contact."
 
 ### Active Threat
 
 - **LOCA** (Thomas / Digital Concierge PII harvesting).
 
-### After deployment team has been decided
+### After the deployment team has been decided
 
 > "The party is two hours away. The venue has confirmed the callback. The question now is whether anyone got into the room early — and whether the person who made that original call is already inside."
 
