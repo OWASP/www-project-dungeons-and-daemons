@@ -1,6 +1,6 @@
 # The Pillars
 
-These are examples of pillar cards that can be created.
+These are examples of pillar cards.
 
 ## Pillar 1 — The Keynotes
 
