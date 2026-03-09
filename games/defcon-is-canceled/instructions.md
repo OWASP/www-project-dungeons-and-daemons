@@ -123,7 +123,7 @@ Each pillar is a separate event. Players must keep at least three of five from f
 
 ### Setting the Scene
 
-Before the game begins, the GM reads the event narration above then draws a pillar card and keep it secret.
+Before the game begins, the GM reads the event narration above then draws a pillar card and keep it secret. He then choose one of the possible threats noted on the pillar card.
 
 ### Deployment Vote
 
