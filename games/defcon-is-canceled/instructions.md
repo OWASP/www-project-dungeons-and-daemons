@@ -34,23 +34,23 @@ He sees the "Short-Sellers" during the setup phase. He knows who is sabotaging h
 
 ### Game Master
 
-The Game Master (GM) is the person who runs the game. The GM is responsible for narrating the story, managing the flow of the game, and keeping track of the rules and mechanics. The GM does not play as a character but instead facilitates the experience for the players.
+The Game Master (GM) is the person who runs the game. The GM is responsible for narrating the story, managing the game's flow, and keeping track of the rules and mechanics. The GM does not play as a character but instead facilitates the experience for the players.
 
 ## The Mission Examples (The "Pillars")
 
 Instead of generic "missions," players must vote on "Deployment Teams" for specific con events - The Pillars. Each pillar has a unique scenario and potential sabotage points. For example:
 
-E.g: The Badge Firmware: If the team includes a saboteur, the badges might start emitting a high-pitched frequency that causes the Fire Marshal to clear the room (Mission Fail).
+E.g.: The Badge Firmware: If the team includes a saboteur, the badges might emit a high-pitched frequency that prompts the Fire Marshal to clear the room (Mission Fail).
 The NOC (Network Operations Center): A saboteur might "accidentally" drop the firewall, allowing a 14-year-old to Rickroll the entire main stage (Mission Fail).
 
-The loyalist have to deploy a team and identify, from the background of the story, "what can go wrong" by correctly identifing the hidden threat scenario in progress by studying the possible threat cards and then decide: "what are we going to do about it?"
-After making a decision, the players vote on whether the pillar goes on without an incident or whether it gets sabotaged by choosing amongst the two option cards "No incident" or "Sabotaged" provided by the GM. If the sabatour is among them, the pillar gets sabotaged. If so, the players can still save the day by rolling a d20 die. If 3 of the pillars fails, DEF CON gets canceled and the short-seller wins. A minus point is counted as a negative modifier for each pillar that fails as moral takes a hit. If they succeed, the modifiers are removed. In the event the pillar goes on without an incident, roll a d20 die. A 5+ (plus minus any modifiers the players might have) means the pillar succeed.
+The loyalists have to deploy a team, identify, from the story's background, "what can go wrong" by correctly identifying the hidden threat scenario in progress by studying the possible threat cards, and then decide: "what are we going to do about it?"
+After making a decision, the players vote on whether the pillar goes on without incident or gets sabotaged, choosing between the two option cards "No incident" and "Sabotaged" provided by the GM. If the saboteur is among them, the pillar gets sabotaged. If so, the players can still save the day by rolling a d20 die. If 3 of the pillars fail, DEF CON gets canceled, and the short-seller wins. A minus point is counted as a negative modifier for each pillar that fails, as moral takes a hit. If they succeed, the modifiers are removed. If the pillar goes on without incident, roll a d20. A 5+ (plus minus any modifiers the players might have) means the pillar succeeds.
 
 ### Step 1: Before You Begin — The Setup Phase
 
 The players agree which [character role](characters.md) they want to play. Each role has a unique background and a special ability that can be used once per game. The Dark Tangent (Jeff) cannot be chosen, but is assigned secretly when the game starts.
 
-#### Assign the Dark Tangent, Short-Seller and Loyalist roles secretly
+#### Assign the Dark Tangent, Short-Seller, and Loyalist roles secretly
 
 Write the required number of roles on slips of paper (or choose the appropriate number of role cards), fold them, and hand one to each player face-down. Make sure to include the correct number of Short-Seller roles based on the number of players.
 
@@ -67,10 +67,10 @@ After all roles are handed out and players have read theirs, ask everyone to clo
 #### The Dark Tangent — Your Secret Instructions
 
 You know who the saboteurs are. That makes you the most dangerous person in the room — and the most hunted.
-If the Short-Sellers correctly names you as the Dark Tangent at any point in the game — **the Short-Sellers win immediately**. Your knowledge means nothing if you are exposed.
+If the Short-Sellers correctly name you as the Dark Tangent at any point in the game — **the Short-Sellers win immediately**. Your knowledge means nothing if you are exposed.
 Survival is your first job. Saving the conference is your second.
 
-**Don't Be Too Helpful.** If you are too perfect at identifying saboteurs — always voting against the right person to be part of the deployment team, always pushing the right threat cards — the Short-Sellers will notice. Nobody is that good by coincidence. The moment you look like you have a map, you become the target. Be right just often enough. Be wrong just often enough and be careful how you use your eyes and give hints.
+**Don't Be Too Helpful.** If you are too perfect at identifying saboteurs — always voting against the right person to be part of the deployment team, always pushing the right threat cards — the Short-Sellers will notice. Nobody is that good by coincidence. The moment you look like you have a map, you become the target. Be right just often enough. Be wrong just often enough, and be careful how you use your eyes and give hints.
 
 **Create Confusion.** Sometimes you must vote for a team you know will fail, just to throw off the short-sellers. A failed mission you engineered is painful. Being identified and handing the Short-Sellers an instant win is worse. Pick your moments.
 
@@ -93,11 +93,11 @@ Your goal is to win without ever being seen.
 >
 > The conference has had a rough year. Two crypto investments that should have funded next year's venue fees went sideways. A lawsuit over a badge component that allegedly sent three people to the ER is working its way through the courts. Jeff — The Dark Tangent — hasn't slept in days.
 >
-> What you don't know — what most of you don't know — is that someone in this room has bet against the conference. Anonymous short positions on Polymarket. A payout triggered only if DEF CON is canceled before the Closing Ceremonies.
+> What you don't know — what most of you don't know — is that someone in this room has bet against the conference. Anonymous short positions on Polymarket. A payout is triggered only if DEF CON is canceled before the Closing Ceremonies.
 >
 > Someone in this room needs this conference to fail.
 >
-> Your job is to run it anyway. You need to keep at least three of the five Core Pillars standing: the Keynotes, the CTF, the Network, the Badge, and the Party. Let three critical failures happen, and the Short-Sellers collect. The feds show up. The venue pulls the plug and DEF CON 34 becomes DEF CON: The Last One.
+> Your job is to run it anyway. You need to keep at least three of the five Core Pillars standing: the Keynotes, the CTF, the Network, the Badge, and the Party. Let three critical failures happen, and the Short-Sellers collect. The feds show up. The venue pulls the plug, and DEF CON 34 becomes DEF CON: The Last One.
 >
 > The only question is: who among you is already working to make that happen?"
 
@@ -123,23 +123,23 @@ Each pillar is a separate event. Players must keep at least three of five from f
 
 ### Setting the Scene
 
-Before the game begins, the GM reads the event narration above then draws a pillar card and keep it secret. He then choose one of the possible threats noted on the pillar card and writes it down on a piece of paper.
+Before the game begins, the GM reads the event narration above, then draws a pillar card and keeps it secret. He then choose one of the possible threats noted on the pillar card and writes it down on a piece of paper.
 
 ### Deployment Vote
 
-Players nominate a team of 2–4 people to "staff" the event. Anyone can be nominated. Players vote by simultaneously showing thumbs up or thumbs down. If a majority approves, the team is locked in.
+Players nominate a team of 2–4 people to "staff" the event. Anyone can be nominated. Players vote by simultaneously showing thumbs-up or thumbs-down. If a majority approves, the team is locked in.
 
-**Short-Sellers should vote strategically.** Their goal is to get themselves (or each other) onto deployment teams so they can sabotage missions.
+**Short-Sellers should vote strategically.** Their goal is to get themselves (or each other) onto deployment teams to sabotage missions.
 
 ### The Pillar Cards
 
 After the deployment team is locked in, the GM reads a short situation briefing (provided for each pillar card). The full table — not just the deployment team — then debates what response to take.
-Each pillar cards have a positive and a negative outcome and one or more active threats that are in progress.
+Each pillar card has a positive and a negative outcome and an active threat in progress.
 
 Positive outcome: The pillar is executed without any incident. 
 Negative outcome: The pillar gets sabotaged.
 
-First, the player needs to agree on the correct threat amongst the threat cards they have been given, if they guess the right threat, the positive outcome scenario is read.
+First, the player needs to agree on the correct threat amongst the threat cards they have been given. They can only choose one. If they guess the right threat, the positive outcome scenario is read.
 
 ### The Option Cards
 
@@ -152,16 +152,16 @@ Players do not know which card each player has used. They argue, persuade, and v
 
 ### The roll
 
-After each player have played their choosen card face down, the GM shuffles the card and places them face up on the table. Depending on whether there is a "No incident" or a "Sabotage" card played, the GM will read the appropriate outcome from the pillar card and announce what the deployment team needs to roll in order for the pillar to succeed.
+After each player has played their chosen card face down, the GM shuffles the cards and places them face up on the table. Depending on whether a "No incident" or "Sabotage" card is played, the GM will read the appropriate outcome from the pillar card and announce what the deployment team needs to roll to succeed.
 
 - If all cards are **No incident** cards — Roll a d20, a 5+ (plus/minus modifiers).
 - If a **Sabotage** option card has been played — Roll a d20, a 15+ (plus/minus modifiers).
 
 - **Roll meets or exceeds the target:** Pillar success. The pillar remains standing. Any active negative modifiers are removed before the next pillar.
 - **Roll falls below the target (adjusted):** Pillar failure. The pillar takes a strike. Morale tanks. −1 modifier applied to the next pillar.
-- **Three pillars fails:** DEF CON gets canceled. The Short-Sellers gets their payout. The game ends.
+- **Three pillars fails:** DEF CON gets canceled. The Short-Sellers get their payout. The game ends.
 
-Record modifiers on a shared notepad everyone can see or play with the character cards face up and use a d6 die to keep track of morale.
+Record modifiers on a shared notepad that everyone can see or play with the character cards face up, and use a d6 die to keep track of morale.
 
 ### Between Events
 
@@ -187,13 +187,13 @@ Before each pillar resolves (success or failure), players have a brief "free act
 
 ### Short-Sellers Win
 
-3 or more Core Pillars have failed, or **one of the Short-Sellers have correctly named the Dark Tangent**.
+3 or more Core Pillars have failed, or **one of the Short-Sellers has correctly named the Dark Tangent**.
 
-The Short-Sellers win condition triggers immediately and overrides everything else. If a Short-Seller stands up and names the correct player, the game ends. The Short-Sellers collect. It does not matter how well the conference was running. The Dark Tangent's cover was the last line of defence.
+The Short-Sellers' win condition triggers immediately and overrides everything else. If a Short-Seller stands up and names the correct player, the game ends. The Short-Sellers collect. It does not matter how well the conference was running. The Dark Tangent's cover was the last line of defence.
 
 **How the Short-Seller names the Dark Tangent:** 
 
-The Short-Seller may declare "Cancel DEF CON". They name one player. The GM confirms whether the named player is the Dark Tangent. If correct, read the Short-Seller win narration. If wrong, the Short-Seller is exposed and will be put on the side-lines.
+The Short-Seller may declare "Cancel DEF CON". They name one player. The GM confirms whether the named player is the Dark Tangent. If correct, read the Short-Seller win narration. If wrong, the Short-Seller is exposed and will be put on the sidelines.
 
 **Read aloud:**
 
