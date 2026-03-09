@@ -1,6 +1,6 @@
 # The Pillars
 
-These are examples of pillar cards.
+These are examples of pillar cards. NB: Each pillar card should have at least 2 possible threats. The GM choose which one is relevant and write it down on a piece of paper.
 
 ## Pillar 1 — The Keynotes
 
