@@ -10,6 +10,22 @@ Although the project was inspired by OWASP Cornucopia and Dungeons & Dragons, it
 
 Please visit: [https://dungeonsanddaemons.org/](https://dungeonsanddaemons.org/)
 
+## Contributing to Development
+
+### Large binary files
+
+Please install git-lfs to ensure you can download the output files.
+
+Install from https://git-lfs.com/ 
+
+Then pull the binaries from git lfs.
+
+```bash
+
+git lfs pull
+
+```
+
 ## Get the raw data
 
 Please feel free to reuse the raw markdown data in your own projects.
