@@ -4,7 +4,7 @@ These are the characters available to players on the **Loyalist (Resistance)** t
 
 ---
 
-## 1. The Dark Tangent — "The Merlin"
+## 1. The Dark Tangent
 
 **Real name:** Jeff
 **Role:** Conference Founder & All-Knowing Oracle

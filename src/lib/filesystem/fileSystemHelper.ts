@@ -1,24 +1,111 @@
 import fs from "fs";
 import path from "path";
 import type { Route } from "../../domain/routes/route.ts";
+import { fileURLToPath } from 'url';
+
+type RouteContent = {
+  files: string[];
+  folders: string[];
+  content: string;
+};
 
 export class FileSystemHelper {
+
+  private static root = (() => {
+    // During development and build, calculate root from import.meta.url
+
+    if (import.meta.url.includes('.svelte-kit')) {
+      return path.normalize(path.dirname(fileURLToPath(import.meta.url)) + '/../../../../');
+    }
+
+    return path.normalize(path.dirname(fileURLToPath(import.meta.url)) + '/../../../');
+
+  })();
+
+  public static hasDir(path: string): boolean {
+    return fs.existsSync(path);
+  }
+
+  public static hasFile(path: string): boolean {
+    return FileSystemHelper.hasDir(path) && fs.lstatSync(path).isFile();
+  }
+
   public static getDirectories(path: string): string[] {
-    console.log('📂 scanning ' + path + ' for directories')
     return fs
       .readdirSync(path, { withFileTypes: true })
       .filter((x) => x.isDirectory())
-      .map((dirent) => dirent.name)  || [];
+      .map((dirent) => dirent.name);
   }
 
   public static getFiles(path: string): string[] {
-    // console.log('📂 scanning ' + path + ' for files')
     return fs
       .readdirSync(path, { withFileTypes: true })
       .filter((x) => x.isFile())
-      .map((dirent) => dirent.name) || [];
+      .map((dirent) => dirent.name);
   }
 
+  private static normalizeContentPath(contentPath: string): string {
+    return contentPath.replace(/\\/g, '/').replace(/^\.\//, '').replace(/^\/+/, '');
+  }
+
+    /**
+   * Resolves a path in a case-insensitive manner by checking actual directory names.
+   * This ensures cross-platform compatibility between case-sensitive and case-insensitive filesystems.
+   */
+  private static resolveCaseInsensitivePath(basePath: string, relativePath: string): string {
+    const parts = relativePath.split('/').filter(p => p.length > 0);
+    let currentPath = path.normalize(basePath);
+    
+    for (const part of parts) {
+      if (!fs.existsSync(currentPath)) {
+        return path.join(basePath, relativePath); // Path doesn't exist, return as-is
+      }
+      
+      const entries = fs.readdirSync(currentPath, { withFileTypes: true });
+      const matchingEntry = entries.find(entry => 
+        entry.name.toLowerCase() === part.toLowerCase()
+      );
+      
+      if (matchingEntry) {
+        currentPath = path.join(currentPath, matchingEntry.name);
+      } else {
+        currentPath = path.join(currentPath, part);
+      }
+    }
+    
+    return currentPath;
+  }
+
+  private static resolveContentPath(contentPath: string): { resolvedPath: string; isFile: boolean } {
+    const normalizedPath = FileSystemHelper.normalizeContentPath(contentPath);
+    const directPath = FileSystemHelper.resolveCaseInsensitivePath(FileSystemHelper.root, normalizedPath);
+
+    if (fs.existsSync(directPath)) {
+      return {
+        resolvedPath: directPath,
+        isFile: fs.lstatSync(directPath).isFile(),
+      };
+    }
+
+    const markdownPath = FileSystemHelper.resolveCaseInsensitivePath(
+      FileSystemHelper.root,
+      normalizedPath.endsWith('.md') ? normalizedPath : `${normalizedPath}.md`
+    );
+
+    if (fs.existsSync(markdownPath) && fs.lstatSync(markdownPath).isFile()) {
+      return {
+        resolvedPath: markdownPath,
+        isFile: true,
+      };
+    }
+
+    return {
+      resolvedPath: directPath,
+      isFile: false,
+    };
+  }
+
+  /*
   public static getDataFromPath(path: string) {
     let resultFolders = [];
     let resultFiles = [];
@@ -47,6 +134,7 @@ export class FileSystemHelper {
   
     return [resultFiles, resultFolders, content];
   }
+  */
   
   public static CharactersRouteMap(): any[] {
     const basePath: string = "data/characters";
@@ -79,5 +167,71 @@ export class FileSystemHelper {
     });
 
     return routes;
+  }
+
+  public static getDataFromPath(filePath: string) : Map<string, string>
+  {
+    const base = FileSystemHelper.root;
+    let content = new Map<string, string>();
+  
+    // Resolve the actual filesystem path (case-insensitive)
+    const resolvedPath = FileSystemHelper.resolveCaseInsensitivePath(base, filePath);
+    
+    let indexFile: string = path.join(resolvedPath, "index.md");
+    if (fs.existsSync(indexFile)) {
+      content.set(filePath, fs.readFileSync(indexFile, "utf8"));
+    }
+  
+    let folders: string[];
+    try {
+      folders = FileSystemHelper.getDirectories(resolvedPath);
+    } catch (e) {
+      folders = [];
+    }
+  
+    folders.forEach((folder) => {
+      const folderIndexFile = path.join(resolvedPath, folder, "index.md");
+      if (fs.existsSync(folderIndexFile)) {
+        content.set(folder, fs.readFileSync(folderIndexFile, "utf8"));
+      }
+    });
+  
+    return content;
+  }
+
+  public static getRouteData(contentPath: string): RouteContent {
+    const { resolvedPath, isFile } = FileSystemHelper.resolveContentPath(contentPath);
+
+    if (isFile) {
+      return {
+        files: [],
+        folders: [],
+        content: fs.readFileSync(resolvedPath, "utf8"),
+      };
+    }
+
+    const indexFile = path.join(resolvedPath, "index.md");
+    const content = fs.existsSync(indexFile)
+      ? fs.readFileSync(indexFile, "utf8")
+      : "";
+
+    let folders: string[] = [];
+    let files: string[] = [];
+
+    try {
+      folders = FileSystemHelper.getDirectories(resolvedPath);
+      files = FileSystemHelper.getFiles(resolvedPath)
+        .filter((fileName) => fileName.toLowerCase().endsWith('.md') && fileName.toLowerCase() !== 'index.md')
+        .map((fileName) => fileName.replace(/\.md$/i, ''));
+    } catch (e) {
+      folders = [];
+      files = [];
+    }
+
+    return {
+      files,
+      folders,
+      content,
+    };
   }
 }

@@ -7,9 +7,9 @@ This guide gives you everything you need to run "DEF CON: is canceled! (Black be
 ## What You Need
 
 - This guide
-- The Loyalist [character sheets](characters.md)
-- The threat [card list](cards.md)
-- The pillar [card list](pillars.md)
+- The Loyalist [character sheets](/characters/defcon-is-canceled)
+- The threat card list
+- The pillar card list
 - One 20-sided die (d20)
 - One 6-sided die (d6)
 - 3–8 players (works best with 5–7) NB: Expansion packs for larger groups coming soon.
@@ -200,4 +200,3 @@ The Short-Seller may declare "Cancel DEF CON". They name one player. The GM conf
 > "DEF CON gets canceled. The Closing Ceremonies don't happen. The venue contract is voided citing 'repeated safety and liability violations.' The feds are asking questions nobody wants to answer. The Polymarket payout clears sometime Thursday night.
 >
 > DEF CON 34 will be remembered — but not the way anyone intended."
-

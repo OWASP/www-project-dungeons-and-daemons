@@ -5,16 +5,6 @@
     import renderers from '$lib/components/renderers/renderers';
 </script>
 
-<!--The location is a file -->
-{#each data.files as file}
-    <p>├──<a href="/characters/{data.path}/{file}">{Text.Format(file)}</a></p>
-{/each}
-
-<!--The location is a folder -->
-{#each data.folders as folder}
-    <p>├──<a href="/characters/{data.path}/{folder}">{Text.Format(folder)}</a></p>
-{/each}
-
 <!--The location is filecontent -->
 {#if data.content && data.content != ''}
     <div class="character-content">
