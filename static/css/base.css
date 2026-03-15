@@ -8,6 +8,16 @@
     --font-body : 'Courier New', Courier, monospace;
 }
 
+.help-wanted
+{
+
+}
+
+.status-labels
+{
+    width: 100px;
+}
+
 
 body
 {	
@@ -33,7 +43,22 @@ a:hover
     text-decoration: none;
 }
 
-h1,h2,h3,h4
+h1
 {
-    font-weight: 400;
+    font-weight: 800;
+}
+
+h2
+{
+    font-weight: 700;
+}
+
+h3
+{
+    font-weight: 600;
+}
+
+h4
+{
+    font-weight: 500;
 }

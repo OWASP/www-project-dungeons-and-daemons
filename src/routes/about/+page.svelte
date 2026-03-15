@@ -19,22 +19,42 @@
 
     <h2 id="owasp-dungeons-and-daemons">How to contribute</h2>
     <p>
-        Why aren't all games in the game collection are finished?
+        Why aren't all games in the game collection finished?
     </p>
     <p>
         As Dungeons & Daemons is an open-source project, not all games are equally well maintained, this means that we need your help to complete them!
     </p>
     <p>
-        Luckily, contributing is easy, but you should keep in mind that no all games may not need contribution. We use labeling on the website to indicate
+        Luckily, contributing is easy, but you should keep in mind that not all games need contributions. We use labeling on the website to indicate
         whether a game is playable, ready, work-in-progress, in need of maintainence or simply dead (meeaning that we don't support it anymore).
     </p>
     <p>
         This is to help you in selecting a game to play and to help us to get the necessary help where it is needed. The following are the possible states a game can be in and what the different status codes mean.
         We use labels on the main pages for each game communicate these statuses. These are the states and labels we use:
     </p>
-    <ul>
-        <li></li>
-    </ul>
+    <h3>Help Wanted</h3>
+    <img class="help-wanted status-labels" src="/images/help.svg" alt="Help Wanted"/>
+    <p>
+        This game is in need of help, it is either in need of maintainence or it is a work-in-progress 
+        that needs help to be completed. If you are interested in helping out, 
+        please check the game's individual page for more information about how to contribute or 
+        contact us by asking a question in our <a href="https://github.com/OWASP/www-project-dungeons-and-daemons/issues">Github repository</a>.
+    </p>
+    <h3>Ready</h3>
+    <img class="ready status-labels" src="/images/ready.svg" alt="Ready"/>
+    <p>
+        This game is ready to be played, it has been tested and is in a state where it can be played at events. If you are interested in playing this game, please check the game's individual page for more information about how to play or contact us by asking a question in our <a href="https://github.com/OWASP/www-project-dungeons-and-daemons/issues">Github repository</a>.
+    </p>
+    <h3>W.I.P</h3>
+    <img class="wip status-labels" src="/images/wip.svg" alt="Work In Progress"/>
+    <p>
+        This game is a work in progress, it is not yet complete and may have bugs or incomplete features. If you are interested in helping out, please check the game's individual page for more information about how to contribute or contact us by asking a question in our <a href="https://github.com/OWASP/www-project-dungeons-and-daemons/issues">Github repository</a>.
+    </p>
+    <h3>R.I.P</h3>
+    <img class="rip status-labels" src="/images/rip.svg" alt="Rest In Peace"/>
+    <p>
+        This game is no longer maintained, it is not recommended to be played at events and may have bugs or incomplete features. If you are interested in helping out, please check the game's individual page for more information about how to contribute or contact us by asking a question in our <a href="https://github.com/OWASP/www-project-dungeons-and-daemons/issues">Github repository</a>.
+    </p>
     <h2 id="license">License</h2>
     <p>
         Created by Johan Sydseter.<br>
@@ -82,12 +102,7 @@
     p {
         color:white;
     }
-    img
-    {
-        filter: invert(100%);
-        width : 60%;
-        margin-left:20%;
-    }
+
     *
     {
         font-family: var(--font-title);

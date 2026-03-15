@@ -13,7 +13,7 @@
         </p>
     </div>
     <div class="img-container">
-        <img src="/images/games/azure-cloud-castle.jpg" alt="Adventurers standing in front of the Azure Cloud Castle"/>
+        <img src="/images/games/defcon-is-canceled.jpg" alt="Adventurers standing in front of the Azure Cloud Castle"/>
     </div>
 </div>
 
