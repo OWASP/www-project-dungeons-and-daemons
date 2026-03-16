@@ -4,6 +4,7 @@
 
 <div class="slot-div">
     <Breadcrumbs></Breadcrumbs>
+    <h1>Games</h1>
     <slot></slot>
 </div>
 

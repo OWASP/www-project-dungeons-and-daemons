@@ -4,6 +4,7 @@
 
 <div>
     <Breadcrumbs></Breadcrumbs>
+    <h1>Rules</h1>
     <slot></slot>
 </div>
 
