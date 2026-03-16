@@ -173,16 +173,23 @@
     }
 
     .mobile-nav-button {
-        content: url('/icons/menu.png');
         appearance: none;
         display: inline-flex;
         width: 4.1rem;
         height: 4.1rem;
         align-self: flex-end;
+        background-color: transparent;
+        background-image: url('/icons/menu.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        cursor: pointer;
 
     }
 
     .mobile-nav-button:checked {
+        background-image: none;
         content: url('/icons/close.png');
 
     }
