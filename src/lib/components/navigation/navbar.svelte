@@ -322,7 +322,7 @@
     }
 
     .logo {
-        margin-top: 0.4rem;
+        margin-top: 0.7rem;
         width : 50vw;
         max-width: 50vw;
         font-size: 3vw;
@@ -383,7 +383,7 @@
             font-size: 6vw;
         }
         .logo {
-            margin-top: 0rem;
+            margin-top: 0.4rem;
             overflow: visible;
         }
 
