@@ -66,6 +66,7 @@ async function generateNonceForResponse(originresponse) {
   const nonce = generateNonce();
   
   const html = (await originresponse.text())
+  .replace(/<script(?![^>]*\bdata-cfasync=)([^>]*)>/gi, `<script data-cfasync="false"$1>`)
   .replace(/<script(?![^>]*\bnonce=)([^>]*)>/gi, `<script nonce="${nonce}"$1>`)
   .replace(/DhcnhD3khTMePgXw/gi, nonce)
   .replace(
