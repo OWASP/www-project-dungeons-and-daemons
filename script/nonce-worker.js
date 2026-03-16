@@ -22,26 +22,10 @@ async function fetchAndStreamNotFoundPage(resp, request) {
   const pathArray = resp.url.split( '/' );
   const protocol = pathArray[0];
   const host = pathArray[2];
-  const path = pathArray[pathArray.length - 1];
   const url = protocol + '//' + host + '/404';
   const { headers } = resp;
   let html;
-  if (/\/edition\/?$/i.test(resp.url)) {
-    return Response.redirect(protocol + "//" + host + "/cards", 308);
-  }
-  if (/\/api\/?$/i.test(resp.url)) {
-    return Response.redirect(protocol + "//" + host + "/api/docs", 308);
-  }
-  if (/\/card\/[a-z]*.*/i.test(resp.url)) {
-    return Response.redirect(resp.url.replace(/\/card\//i, "/edition/"), 308);
-  }
-  if (/\/card\/?$/i.test(resp.url)) {
-    return Response.redirect(protocol + "//" + host + "/cards", 308);
-  }
 
-  if (/\/cards\/[a-z]/i.test(resp.url) && (/[a-z]/.test(path) || /[A-Z]/.test(pathArray[pathArray.length - 2]))) {
-    return Response.redirect(protocol + "//" + host + "/cards/" + path.toUpperCase(), 301);
-  } 
   const response = await fetch(url);
   html = (await response.text()).replace(/\.\//gi, "/").replace(/id="breadcrumbs" class="/gi, 'id="breadcrumbs" class="hide ');
   return new Response(html, {
