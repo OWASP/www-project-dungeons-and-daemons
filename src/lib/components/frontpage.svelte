@@ -68,6 +68,11 @@
 
     @media (max-aspect-ratio: 1/1) 
     {
+        p {
+            box-sizing: border-box;
+            padding-right: 0rem;
+            margin-right: 0rem;
+        }
         .frontpage
         {
             flex-direction: column;

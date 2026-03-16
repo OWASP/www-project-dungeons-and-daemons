@@ -1,5 +1,4 @@
 <script lang="ts">
-    import SteelText from '$lib/components/navigation/SteelText.svelte';
     export let data;
 
     type CharacterCard = {
@@ -158,7 +157,7 @@
     <section class="character-page">
         {#if parsedContent.cards.length}
             <header class="page-header">
-                <h1><SteelText text={parsedContent.title} /></h1>
+                <h1>{parsedContent.title}</h1>
 
                 {#each parsedContent.intro as paragraph}
                     <p>{@html formatInlineMarkdown(paragraph)}</p>
@@ -195,7 +194,7 @@
 
                 <div class="character-detail-content">
                     <header class="page-header detail-header">
-                        <h1><SteelText text={parsedContent.title} /></h1>
+                        <h1>{parsedContent.title}</h1>
 
                         {#each parsedContent.intro as paragraph}
                             <p>{@html formatInlineMarkdown(paragraph)}</p>

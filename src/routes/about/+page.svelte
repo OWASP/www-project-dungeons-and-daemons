@@ -1,9 +1,5 @@
-<script>
-    import SteelText from '$lib/components/navigation/SteelText.svelte';
-</script>
-
 <div>
-    <h1><SteelText text="About OWASP Dungeons & Daemons?" /></h1>
+    <h1>About OWASP® Dungeons & Daemons?</h1>
     <p></p>
 </div>
 <div>
@@ -98,6 +94,11 @@
         margin:auto;
         width : 90%;
        } 
+    }
+    h1
+    {
+        font-weight: 800;
+        font-size: 2rem;
     }
     h2
     {

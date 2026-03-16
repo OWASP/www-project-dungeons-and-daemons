@@ -1,11 +1,10 @@
 <script>
     import Breadcrumbs from "$lib/components/breadcrumbs.svelte";
-    import SteelText from '$lib/components/navigation/SteelText.svelte';
 </script>
 
 <div class="slot-div">
     <Breadcrumbs></Breadcrumbs>
-    <h1><SteelText text="Characters" /></h1>
+    <h1>Characters</h1>
     <slot></slot>
 </div>
 

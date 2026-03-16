@@ -50,6 +50,18 @@ a:hover
 h1
 {
     font-weight: 800;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.04) 100%),
+        url('/images/steel.jpg');
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: 100% 100%, 320px 320px;
+    background-blend-mode: screen, normal;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.22), 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 h2
@@ -65,4 +77,44 @@ h3
 h4
 {
     font-weight: 500;
+}
+
+@media (max-aspect-ratio: 1/1)
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    li,
+    td,
+    th,
+    a
+    {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    p,h1,h2,ul
+    {
+        box-sizing: border-box;
+        padding-right: 2rem;
+        margin-right: 2rem;
+    }
+
+    table
+    {
+        display: block;
+        box-sizing: border-box;
+        width: calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+        margin-right: 2rem;
+        overflow-x: auto;
+    }
 }

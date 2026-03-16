@@ -1,9 +1,5 @@
-<script>
-    import SteelText from '$lib/components/navigation/SteelText.svelte';
-</script>
-
 <div>
-    <h1><SteelText text="Enhance Your Brand’s Commitment to Security by Sponsoring OWASP® Dungeons & Daemons" /></h1>
+    <h1>Enhance Your Brand’s Commitment to Security by Sponsoring OWASP® Dungeons & Daemons</h1>
     <p></p>
 </div>
 <div>
@@ -149,6 +145,7 @@
     {
       font-family: var(--font-title);
       color:white;
+      font-size: 2rem;
     }
     p
     {
@@ -182,7 +179,7 @@
     {
         width: 100%;
         border-collapse: collapse;
-        margin: 1rem 0 2rem 0;
+        padding-right: 2rem;
     }
 
     th,
