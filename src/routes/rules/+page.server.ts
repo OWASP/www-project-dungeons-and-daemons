@@ -1,4 +1,4 @@
-import { FileSystemHelper } from '$lib/filesystem/fileSystemHelper.ts';
+import { FileSystemHelper, type DirectoryCard } from '$lib/filesystem/fileSystemHelper.ts';
 
 export async function load({params})
 {
@@ -7,7 +7,7 @@ export async function load({params})
     }
 }
 
-function getGameRules() : string[]
+function getGameRules() : DirectoryCard[]
 {
-    return FileSystemHelper.getDirectories("./rules");
+    return FileSystemHelper.getDirectoryCards("./rules");
 }

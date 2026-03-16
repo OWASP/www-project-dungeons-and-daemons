@@ -1,4 +1,4 @@
-import { FileSystemHelper } from '$lib/filesystem/fileSystemHelper.ts';
+import { FileSystemHelper, type DirectoryCard } from '$lib/filesystem/fileSystemHelper.ts';
 
 export async function load({params})
 {
@@ -7,7 +7,7 @@ export async function load({params})
     }
 }
 
-function getCheatSheets() : string[]
+function getCheatSheets() : DirectoryCard[]
 {
-    return FileSystemHelper.getDirectories("./cheatsheets");
+    return FileSystemHelper.getDirectoryCards("./cheatsheets");
 }

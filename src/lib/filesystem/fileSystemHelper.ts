@@ -9,6 +9,11 @@ type RouteContent = {
   content: string;
 };
 
+export type DirectoryCard = {
+  slug: string;
+  image: string | null;
+};
+
 export class FileSystemHelper {
 
   private static root = (() => {
@@ -233,5 +238,28 @@ export class FileSystemHelper {
       folders,
       content,
     };
+  }
+
+  public static getDirectoryCards(contentPath: string, imageDirectory = "games"): DirectoryCard[] {
+    return FileSystemHelper.getDirectories(contentPath).map((slug) => ({
+      slug,
+      image: FileSystemHelper.getPublicImageForSlug(slug, imageDirectory),
+    }));
+  }
+
+  private static getPublicImageForSlug(slug: string, imageDirectory: string): string | null {
+    const extensions = ["jpg", "jpeg", "png", "webp"];
+
+    for (const extension of extensions) {
+      const fileName = `${slug}.${extension}`;
+      const relativeImagePath = path.join("static", "images", imageDirectory, fileName);
+      const resolvedImagePath = FileSystemHelper.resolveCaseInsensitivePath(FileSystemHelper.root, relativeImagePath);
+
+      if (fs.existsSync(resolvedImagePath) && fs.lstatSync(resolvedImagePath).isFile()) {
+        return `/images/${imageDirectory}/${fileName}`;
+      }
+    }
+
+    return null;
   }
 }
