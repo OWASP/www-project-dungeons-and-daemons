@@ -1,11 +1,13 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import { fade } from "svelte/transition";
+    import SteelText from "$lib/components/navigation/SteelText.svelte";
     import { AddLink, type Link } from "./utils";
     import { readTranslation } from "$lib/stores/stores";
     let t = readTranslation();
     let width = $state(0);
     let height = $state(0);
+    let isMobileAspect = $derived(width <= height);
 
     let mainMenu : Link[] = [];
     let subMenu : Link[] = [];
@@ -37,13 +39,13 @@
                     <ul>
                         {#each [...mainMenu].reverse() as link}
                         <li>
-                            <button class="link-mobile" onclick={()=>{toggleMenu();goto(link.href)}}><span>{link.name}</span></button>
+                            <button class="link-mobile" onclick={()=>{toggleMenu();goto(link.href)}}><SteelText text={link.name} /></button>
                         </li>
                         {/each}
                         
                         {#each [...subMenu].reverse() as link}
                         <li>
-                            <button class="link-mobile" onclick={()=>{toggleMenu();goto(link.href)}}><span>{link.name}</span></button>
+                            <button class="link-mobile" onclick={()=>{toggleMenu();goto(link.href)}}><SteelText text={link.name} /></button>
                         </li>
                         {/each}
                         
@@ -54,7 +56,7 @@
         <ul class="desktop-menu">
             {#each mainMenu as link}
                 <li class="general-menu">
-                    <a class="link" href="{link.href}"><div>{link.name}</div></a>
+                    <a class="link" href="{link.href}"><div><SteelText text={link.name} /></div></a>
                 </li>
             {/each}
                 <!--
@@ -70,7 +72,7 @@
                 </li>
                 -->
             </ul>
-        <a class="logo" href="/"><div><span class="desktop">OWASP</span>&nbsp;<span class="desktop mobile">Dungeons & Daemons</span></div></a>
+        <a class="logo" href="/"><div>{#if !isMobileAspect}<SteelText class="logo-owasp" text="OWASP" />&nbsp;{/if}<SteelText class="logo-title" text="Dungeons & Daemons" /></div></a>
         
     </nav>
 </header>
@@ -157,7 +159,6 @@
 
     .link-mobile
     {
-        color:var(--white);
         text-decoration: none;
         font-size: 2rem;
         width : 100%;
@@ -167,29 +168,48 @@
         padding-bottom: 0;
         border-bottom: 1px rgba(255, 255, 255, 0.203) solid;
     }
-    .link-mobile:hover > span {
+    .link-mobile:hover {
         opacity: 50%;
     }
 
     .mobile-nav-button {
+        --nav-icon-mask: url('/icons/menu.png');
+        --nav-icon-size: 2.95rem;
         appearance: none;
+        -webkit-appearance: none;
         display: inline-flex;
-        width: 4.1rem;
-        height: 4.1rem;
+        width: 4.45rem;
+        height: 4.45rem;
+        min-width: 4.1rem;
+        min-height: 4.1rem;
+        flex: 0 0 4.45rem;
+        padding: 0;
         align-self: flex-end;
         background-color: transparent;
-        background-image: url('/icons/menu.png');
+        background-image:
+            linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.04) 100%),
+            url('/images/steel.jpg');
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        background-repeat: no-repeat, repeat;
+        background-size: 100% 100%, 220px 220px;
+        background-blend-mode: screen, normal;
         border: none;
+        border-radius: 0;
         cursor: pointer;
+        -webkit-mask-image: var(--nav-icon-mask);
+        mask-image: var(--nav-icon-mask);
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: var(--nav-icon-size) var(--nav-icon-size);
+        mask-size: var(--nav-icon-size) var(--nav-icon-size);
+        filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.22)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.45));
 
     }
 
     .mobile-nav-button:checked {
-        background-image: none;
-        content: url('/icons/close.png');
+        --nav-icon-mask: url('/icons/close.png');
 
     }
 
@@ -238,7 +258,6 @@
     .link
     {
         float:right;
-        color:#ffffff;
         text-decoration: none;
         padding-left: .4vw;
         padding-right: .4vw;
@@ -293,7 +312,7 @@
     a.sub-menu:hover {
         opacity: 100%;
         
-        background-color: white;
+    
         color: #1c1c1c;
     }
 
@@ -310,7 +329,6 @@
         padding: 1rem;
         font-weight: bold;
         text-decoration: none;
-        color:white;
         transition: var(--transition);
         text-transform: uppercase;
         white-space: pre;
@@ -359,13 +377,9 @@
             animation: fadeInFromNone 0.5s ease-out;
         }
 
-        .desktop
+        :global(.logo-title)
         {
-            display: none;
-        }
-        .mobile
-        {
-            display: inline;
+            display: inline-block;
             font-size: 6vw;
         }
         .logo {

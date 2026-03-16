@@ -1,5 +1,6 @@
 <script lang="ts">
     import { page } from "$app/stores";
+    import SteelText from "$lib/components/navigation/SteelText.svelte";
     import { Text } from "$lib/utils/text";
 
     let parts : string[];
@@ -31,9 +32,9 @@
 <p id="breadcrumbs">
     {#each parts as part,index}
         {#if index != 0}
-            <span>>> </span>
+            <span class="breadcrumb-separator"><SteelText text=">>>" /></span>
         {/if}
-        <a href="{generateHref(index)}">{generateName(part)}</a>
+        <a href="{generateHref(index)}"><SteelText text={generateName(part)} /></a>
         <span> </span>
     {/each}
 </p>
@@ -42,5 +43,12 @@
     p
     {
         font-size: 1.5rem;
+    }
+
+    a,
+    .breadcrumb-separator
+    {
+        display: inline-flex;
+        align-items: center;
     }
 </style>
