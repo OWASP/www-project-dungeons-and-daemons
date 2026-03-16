@@ -13,12 +13,11 @@
 
 
     AddLink(mainMenu,"Games","/games");
+    AddLink(mainMenu,"Cheat sheets","/cheatsheets");
+    AddLink(mainMenu,"How to play","/rules");
+    AddLink(mainMenu,"Characters","/characters");
     AddLink(mainMenu,"Sponsors","/sponsors");
     AddLink(mainMenu,"About","/about");
-
-    AddLink(mainMenu,"How to play","/rules");
-    AddLink(mainMenu,"Cheat sheets","/cheatsheets");
-    AddLink(mainMenu,"Characters","/characters");
 
     function toggleMenu()
     {
