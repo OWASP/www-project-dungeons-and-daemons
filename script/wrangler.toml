@@ -1,0 +1,16 @@
+# Top-level configuration
+name = "nonce-workerjs"
+main = "script/nonce-worker.js"
+compatibility_date = "2025-01-24"
+workers_dev = false
+
+[env.staging]
+routes = [
+    { pattern = "https://dungeonsanddaemons.org/*", zone_name = "dungeonsanddaemons.org" },
+    { pattern = "https://dungeonsanddaemons.org", zone_name = "dungeonsanddaemons.org" }
+]
+[env.production]
+routes = [
+    { pattern = "https://dungeonsanddaemons.org/*", zone_name = "dungeonsanddaemons.org" },
+    { pattern = "https://dungeonsanddaemons.org", zone_name = "dungeonsanddaemons.org" }
+]
