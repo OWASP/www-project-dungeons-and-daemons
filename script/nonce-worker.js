@@ -66,6 +66,7 @@ async function generateNonceForResponse(originresponse) {
   const nonce = generateNonce();
   
   const html = (await originresponse.text())
+  .replace(/<script(?![^>]*\bnonce=)([^>]*)>/gi, `<script nonce="${nonce}"$1>`)
   .replace(/DhcnhD3khTMePgXw/gi, nonce)
   .replace(
     'src="https://ajax.cloudflare.com',
