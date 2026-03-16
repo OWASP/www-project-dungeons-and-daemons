@@ -21,14 +21,14 @@
 
     function parseCharacterContent(content: string): ParsedContent
     {
-        const lines = content.split('\n').map((line) => line.trim());
-        const titleLine = lines.find((line) => line.startsWith('# ')) ?? '';
+        const lines = content.split('\n').map((line) => line.trimEnd());
+        const titleLine = lines.find((line) => line.trim().startsWith('# ')) ?? '';
         const title = titleLine.replace(/^#\s+/, '');
-        const tableStart = lines.findIndex((line) => line.startsWith('|'));
+        const tableStart = lines.findIndex((line) => line.trim().startsWith('|'));
 
         if (tableStart !== -1)
         {
-            const introLines = lines.slice(0, tableStart).filter((line) => line && !line.startsWith('# '));
+            const introLines = lines.slice(0, tableStart).filter((line) => !line.trim().startsWith('# '));
             const cards = lines
                 .slice(tableStart)
                 .filter((line) => isCardRow(line))
@@ -43,7 +43,7 @@
             };
         }
 
-        const bodyLines = lines.filter((line) => line && !line.startsWith('# '));
+        const bodyLines = lines.filter((line) => !line.trim().startsWith('# '));
 
         return {
             title,
@@ -55,15 +55,17 @@
 
     function isCardRow(line: string): boolean
     {
-        return line.startsWith('|')
-            && !/^\|[\s:-]+\|[\s:-]*\|?$/.test(line)
-            && line.includes('](')
-            && line.includes('![');
+        const trimmed = line.trim();
+
+        return trimmed.startsWith('|')
+            && !/^\|[\s:-]+\|[\s:-]*\|?$/.test(trimmed)
+            && trimmed.includes('](')
+            && trimmed.includes('![');
     }
 
     function parseCardRow(line: string): CharacterCard | null
     {
-        const cells = line
+        const cells = line.trim()
             .replace(/^\|/, '')
             .replace(/\|$/, '')
             .split('|')
@@ -98,8 +100,10 @@
         const paragraphs: string[] = [];
         let currentParagraph: string[] = [];
 
-        for (const line of lines)
+        for (const rawLine of lines)
         {
+            const line = rawLine.trim();
+
             if (!line)
             {
                 if (currentParagraph.length)
@@ -107,6 +111,18 @@
                     paragraphs.push(currentParagraph.join(' '));
                     currentParagraph = [];
                 }
+                continue;
+            }
+
+            if (line.startsWith('**'))
+            {
+                if (currentParagraph.length)
+                {
+                    paragraphs.push(currentParagraph.join(' '));
+                    currentParagraph = [];
+                }
+
+                paragraphs.push(line);
                 continue;
             }
 
@@ -139,15 +155,15 @@
 
 {#if parsedContent.title}
     <section class="character-page">
-        <header class="page-header">
-            <h1>{parsedContent.title}</h1>
-
-            {#each parsedContent.intro as paragraph}
-                <p>{@html formatInlineMarkdown(paragraph)}</p>
-            {/each}
-        </header>
-
         {#if parsedContent.cards.length}
+            <header class="page-header">
+                <h1>{parsedContent.title}</h1>
+
+                {#each parsedContent.intro as paragraph}
+                    <p>{@html formatInlineMarkdown(paragraph)}</p>
+                {/each}
+            </header>
+
             <div class="playing-card-grid">
                 {#each parsedContent.cards as card}
                     <a class="playing-card" href={card.href} aria-label="Open {card.title}">
@@ -160,13 +176,39 @@
                     </a>
                 {/each}
             </div>
-        {/if}
+        {:else}
+            <div class="character-detail-layout">
+                <aside class="character-card-column">
+                    <div class="playing-card detail-card">
+                        {#if data.characterImage}
+                            <div class="card-image-frame">
+                                <img src={data.characterImage} alt={`Portrait of ${parsedContent.title}`} />
+                            </div>
+                        {/if}
 
-        {#if parsedContent.body.length}
-            <div class="character-detail">
-                {#each parsedContent.body as paragraph}
-                    <p>{@html formatInlineMarkdown(paragraph)}</p>
-                {/each}
+                        <div class="card-copy">
+                            <h2>{parsedContent.title}</h2>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="character-detail-content">
+                    <header class="page-header detail-header">
+                        <h1>{parsedContent.title}</h1>
+
+                        {#each parsedContent.intro as paragraph}
+                            <p>{@html formatInlineMarkdown(paragraph)}</p>
+                        {/each}
+                    </header>
+
+                    {#if parsedContent.body.length}
+                        <div class="character-detail">
+                            {#each parsedContent.body as paragraph}
+                                <p>{@html formatInlineMarkdown(paragraph)}</p>
+                            {/each}
+                        </div>
+                    {/if}
+                </div>
             </div>
         {/if}
     </section>
@@ -183,6 +225,30 @@
     .character-detail
     {
         margin-bottom: 2rem;
+    }
+
+    .character-detail-layout
+    {
+        display: grid;
+        grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .character-card-column
+    {
+        position: sticky;
+        top: 1rem;
+    }
+
+    .character-detail-content
+    {
+        min-width: 0;
+    }
+
+    .detail-header
+    {
+        margin-bottom: 1.5rem;
     }
 
     h1
@@ -225,6 +291,13 @@
         transform: translateY(-5px);
         box-shadow: 0 26px 48px rgba(0, 0, 0, 0.36);
         border-color: rgba(97, 182, 230, 0.8);
+    }
+
+    .detail-card:hover
+    {
+        transform: none;
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+        border-color: rgba(237, 237, 237, 0.24);
     }
 
     .card-image-frame
@@ -270,6 +343,17 @@
         {
             width: calc(100% - 2rem);
             margin: 1rem auto 2rem;
+        }
+
+        .character-detail-layout
+        {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .character-card-column
+        {
+            position: static;
         }
 
         p

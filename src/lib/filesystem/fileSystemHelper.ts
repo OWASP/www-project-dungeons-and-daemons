@@ -243,20 +243,23 @@ export class FileSystemHelper {
   public static getDirectoryCards(contentPath: string, imageDirectory = "games"): DirectoryCard[] {
     return FileSystemHelper.getDirectories(contentPath).map((slug) => ({
       slug,
-      image: FileSystemHelper.getPublicImageForSlug(slug, imageDirectory),
+      image: FileSystemHelper.getPublicImage(`${imageDirectory}/${slug}`),
     }));
   }
 
-  private static getPublicImageForSlug(slug: string, imageDirectory: string): string | null {
+  public static getPublicImage(relativeImagePath: string): string | null {
     const extensions = ["jpg", "jpeg", "png", "webp"];
+    const normalizedImagePath = FileSystemHelper.normalizeContentPath(relativeImagePath);
 
     for (const extension of extensions) {
-      const fileName = `${slug}.${extension}`;
-      const relativeImagePath = path.join("static", "images", imageDirectory, fileName);
-      const resolvedImagePath = FileSystemHelper.resolveCaseInsensitivePath(FileSystemHelper.root, relativeImagePath);
+      const imagePathWithExtension = `${normalizedImagePath}.${extension}`;
+      const resolvedImagePath = FileSystemHelper.resolveCaseInsensitivePath(
+        FileSystemHelper.root,
+        path.join("static", "images", imagePathWithExtension)
+      );
 
       if (fs.existsSync(resolvedImagePath) && fs.lstatSync(resolvedImagePath).isFile()) {
-        return `/images/${imageDirectory}/${fileName}`;
+        return `/${FileSystemHelper.normalizeContentPath(path.join("images", imagePathWithExtension))}`;
       }
     }
 
