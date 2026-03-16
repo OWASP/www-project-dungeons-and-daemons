@@ -8,6 +8,10 @@
     --font-body : 'Courier New', Courier, monospace;
 }
 
+.display-s {
+    display: contents
+}
+
 .help-wanted
 {
 
