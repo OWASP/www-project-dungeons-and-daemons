@@ -4,7 +4,7 @@
 
 <div>
     <Breadcrumbs></Breadcrumbs>
-    <h1>Cheatsheets</h1>
+    <h1>Cheat Sheets</h1>
     <slot></slot>
 </div>
 
