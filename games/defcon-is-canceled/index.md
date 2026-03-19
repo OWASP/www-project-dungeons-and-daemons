@@ -13,4 +13,4 @@ A few key organizers have placed massive, anonymous "short" bets on a prediction
 
 ## Gameplay
 
-See: [instructions](defcon-is-canceled/instructions)
+See: [instructions](/rules/defcon-is-canceled)
