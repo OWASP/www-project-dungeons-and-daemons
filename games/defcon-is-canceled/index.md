@@ -1,4 +1,4 @@
-# DEF CON: is canceled! (Black betrayal)"
+# DEF CON: is canceled! (Black betrayal)
 
 ![DEF CON is canceled! Dark Betrayal.[large]](/static/images/games/defcon-is-canceled.jpg)
 
